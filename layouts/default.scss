@@ -1,0 +1,130 @@
+// Variables.
+$primary-color: #002252;
+$secondary-color: #ADB1C0;
+$terteary-color: #F1F4F6;
+$cuaternary-color: #0B84FF;
+$quinary-color: #3C7DCA;
+
+// Theme definitions.
+$themes: (
+  primaryTheme: (
+    primaryColor: $primary-color,
+    secondaryColor: $secondary-color,
+    tertearyColor: $terteary-color,
+    cuaternaryColor: $cuaternary-color,
+    quinaryColor: $quinary-color,
+  ),
+  secondaryTheme: (
+    primaryColor: $cuaternary-color,
+    secondaryColor: $quinary-color,
+    tertearyColor: $secondary-color,
+    cuaternaryColor: $primary-color,
+    quinaryColor: $terteary-color,
+  ),
+);
+
+// Theme Implementation
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+// Set values theme.
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+// Fonts.
+.title-view {
+  font-family: 'Robot', sans-serif;
+  font-size: 2.1vw;
+  font-weight: 600;
+  @include themify($themes) {
+    color: themed('primaryColor');
+  }
+}
+
+.title-block {
+  font-family: 'Robot', sans-serif;
+  font-size: 1.7vw;
+  font-weight: 600;
+  @include themify($themes) {
+    color: themed('primaryColor');
+  }
+}
+
+.subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2vw;
+  font-weight: 700;
+  @include themify($themes) {
+    color: themed('primaryColor');
+  }
+}
+
+.text-regular {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.9vw;
+  @include themify($themes) {
+    color: themed('secondaryColor');
+  }
+  letter-spacing: 0.02vw;
+  line-height: 1.3vw;
+}
+
+.text-bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.9vw;
+  @include themify($themes) {
+    color: themed('secondaryColor');
+  }
+  letter-spacing: 0.02vw;
+  line-height: 1.3vw;
+}
+
+html,
+body,
+#__nuxt,
+#__layout {
+  padding: 0;
+  margin: 0;
+  @extend .text-regular;
+}
+
+// Responsive.
+@media (max-width: 680px) {
+  .title-view {
+    font-size: 8vw;
+  }
+
+  .title-block {
+    font-size: 7vw;
+  }
+
+  .subtitle {
+    font-size: 6vw;
+  }
+
+  .text-regular {
+    font-size: 5vw;
+    letter-spacing: 0.02vw;
+    line-height: normal;
+  }
+
+  .text-bold {
+    font-size: 5vw;
+    letter-spacing: 0.02vw;
+    line-height: normal;
+  }
+}

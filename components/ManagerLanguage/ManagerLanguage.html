@@ -1,0 +1,11 @@
+<div class="ManagerLanguage">
+  <select
+     v-model="currentLanguage"
+     @change="changeLanguage($event.target.value)"
+     class="ManagerLanguage__Select"
+  >
+     <option v-for="(language, index) in languages" :value="language" class="ManagerLanguage__Select-Option">
+        {{ language }}
+     </option>
+  </select>
+</div>

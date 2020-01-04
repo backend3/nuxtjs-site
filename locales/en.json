@@ -1,0 +1,14 @@
+{
+  "header": {
+    "title": "Header"
+  },
+  "home": {
+    "title": "Home"
+  },
+  "footer": {
+    "title": "Footer"
+  },
+  "theme": {
+    "button": "Cange theme"
+  }
+}

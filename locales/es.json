@@ -1,0 +1,14 @@
+{
+  "header": {
+    "title": "Cabecera"
+  },
+  "home": {
+    "title": "Inicio"
+  },
+  "footer": {
+    "title": "Pie de página"
+  },
+  "theme": {
+    "button": "Cambiar tema"
+  }
+}

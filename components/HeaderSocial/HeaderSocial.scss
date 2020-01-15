@@ -1,0 +1,280 @@
+@import '../../layouts/default.scss';
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.HeaderSocial {
+  font-family: "Open Sans", sans-serif;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0vw 9.8vw 2vw 15.2vw;
+  background: #F1F4F6;
+  background-image: url('../../assets/contact/contact us.png');
+  background-repeat: no-repeat;
+  background-size: 102vw;
+  background-position: 0vw 0vw;
+  height: 20vw;
+}
+
+.HeaderSocial__Description {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4vw 0vw;
+}
+
+.HeaderSocial__Title {
+  color: white;
+  margin: 0;
+  font-size: 2.5vw;
+}
+
+.HeaderSocial__Text {
+  color: #888B9A;
+  font-size: 1vw;
+  font-family: "Open Sans", sans-serif;
+  width: 32vw;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.HeaderSocial__Button {
+  background: #002252;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0.4vw 1.5vw;
+  border-radius: 0.3vw;
+  font-size: 0.9vw;
+  font-weight: 300;
+  width: 8vw;
+  text-align: center;
+  margin-top: 1vw;
+}
+
+.HeaderSocial__Image {
+  width: 31vw;
+}
+
+// ====================================> start Component Contact
+.HeaderSocial__Contact {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 9.8vw 2vw 9.8vw;
+  background: #F1F4F6;
+  background-image: url('../../assets/contact/contact us.png');
+  background-repeat: no-repeat;
+  background-size: 102vw;
+  background-position: 0;
+  height: 20vw;
+
+  h3, p, a {
+    font-weight: 300 !important;
+  }
+
+  a {
+    border-radius: 0.5vw;
+  }
+}
+
+.HeaderSocial__Description__Contact {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2vw 0;
+}
+
+.HeaderSocial__Title__Contact {
+  color: white;
+  margin: 0;
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: 300;
+}
+
+.HeaderSocial__Text__Contact {
+  color: #888B9A;
+  font-size: 1vw;
+  font-family: "Open Sans", sans-serif;
+  width: 32vw;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.HeaderSocial__Button__Contact {
+  background: #002252;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0.4vw 1.5vw;
+  border-radius: 0.3vw;
+  font-size: 0.9vw;
+  font-weight: 300;
+  width: 8vw;
+  text-align: center;
+  margin-top: 1vw;
+}
+
+.HeaderSocial__Image__Contact {
+  width: 31vw;
+}
+
+.header__Contact__Form {
+  background: white;
+  width: 30vw;
+  height: 12vw;
+  position: absolute;
+  top: 8vw;
+  border-radius: 1vw;
+  justify-content: center;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    @include themify($themes) {
+      color: themed('quinaryColor');
+    }
+  }
+
+  a {
+    color: white;
+    padding: 0.5vw 2vw;
+    background: linear-gradient(#b2bdc7 0%, #72859e 100%);
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+}
+
+.header__Contact__Form__Text {
+  color: white;
+  position: absolute;
+  top: 20vw;
+}
+
+.margin__Botton_Zero {
+  margin-bottom: 0;
+}
+
+.margin__Top__Zero {
+  margin-top: 0;
+}
+
+.font-size-08 {
+  font-size: 0.8vw;
+}
+
+// ======================> end Component Contact
+
+@media (max-width: 1024px) {
+  //===========================> start adaptative headerSocial Contact
+  .HeaderSocial__Contact {
+    background-size: 274vw;
+    background-position: 0 0;
+    height: 60vw;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .HeaderSocial__Title__Contact {
+    text-align: center;
+  }
+  .header__Contact__Form {
+    top: 28vw;
+    width: 72vw;
+    height: 30vw;
+
+    h3 {
+      margin-bottom: 2vw;
+      margin-top: 0;
+      font-size: 4vw;
+    }
+
+    p {
+      line-height: 4vw;
+      font-size: 3vw;
+    }
+
+    a {
+      font-size: 3vw;
+      padding: 2vw 1vw;
+    }
+  }
+  .header__Contact__Form__Text {
+    top: 57vw;
+    font-size: 3vw;
+  }
+  .HeaderSocial__Description__Contact {
+    margin: -35vw 0vw 0vw 0vw;
+  }
+  .HeaderSocial__Title__Contact {
+    font-size: 6vw;
+  }
+  //===========================> end adaptative headerSocial Contact
+}
+
+// ====================================> start Component About
+.HeaderSocial__About {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 9.8vw 2vw 9.8vw;
+  background: #F1F4F6;
+  background-image: url('../../assets/contact/contact us.png');
+  background-repeat: no-repeat;
+  background-size: 102vw;
+  background-position: 0;
+  height: 15vw;
+
+  h3, p, a {
+    font-weight: 300 !important;
+  }
+
+  a {
+    border-radius: 0.5vw;
+  }
+}
+
+.HeaderSocial__Description__About {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2vw 0;
+}
+
+.HeaderSocial__Title__About {
+  color: white;
+  margin: 0;
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: 300;
+}
+
+.HeaderSocial__Text__About {
+  color: #888B9A;
+  font-size: 1vw;
+  font-family: "Open Sans", sans-serif;
+  width: 32vw;
+  font-weight: 400;
+  text-align: justify;
+}
+
+// ====================================> end Component About

@@ -1,0 +1,14 @@
+<div :class="propclassMain">
+  <div :class="propclassDescription">
+    <h1 :class="propClassTitle">{{propTitle}}</h1>
+    <h2 :class="propclassText">{{propText}}</h2>
+  </div>
+  <div class="header__Contact__Form" v-if="propshowContactForm">
+    <h3>Question?</h3>
+    <p class="margin__Botton_Zero margin__Top__Zero font-size-08">Our operational service team is available</p>
+    <p class="margin__Top__Zero font-size-08">24/7 to attend your personal requirements.</p>
+    <a href="mailto:support@bitexpro.com">EMAIL US</a>
+  </div>
+  <p class="header__Contact__Form__Text font-size-08" v-if="propshowContactForm">In case of token listing, Please contact us in the
+    email below</p>
+</div>

@@ -1,9 +1,9 @@
 // Variables.
-$primary-color: #002252;
-$secondary-color: #ADB1C0;
-$terteary-color: #F1F4F6;
-$cuaternary-color: #0B84FF;
-$quinary-color: #3C7DCA;
+$primary-color: #16161E;
+$secondary-color: #FFFFFF;
+$terteary-color: #33444E;
+$cuaternary-color: #5684BE;
+$quinary-color: #A1ABB2;
 
 // Theme definitions.
 $themes: (
@@ -15,11 +15,11 @@ $themes: (
     quinaryColor: $quinary-color,
   ),
   secondaryTheme: (
-    primaryColor: $cuaternary-color,
-    secondaryColor: $quinary-color,
-    tertearyColor: $secondary-color,
-    cuaternaryColor: $primary-color,
-    quinaryColor: $terteary-color,
+    primaryColor: $primary-color,
+    secondaryColor: $secondary-color,
+    tertearyColor: $terteary-color,
+    cuaternaryColor: $cuaternary-color,
+    quinaryColor: $quinary-color,
   ),
 );
 

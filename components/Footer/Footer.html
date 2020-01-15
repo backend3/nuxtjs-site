@@ -1,3 +1,43 @@
 <div class="Footer">
-  {{ $t('footer.title') }}
+  <div class="flex-row-container foot_container">
+    <div class="flex-row-item footer_left_container">
+      <div class="flex-row-item footer_logo_container">
+        <img src="../../assets/images/footer/logo.png" alt="" class="footer_logo">
+      </div>
+      <div class="flex-row-item footer_container_redes">
+        <div class="flex-row-item footer_redes_item">
+          <a href="https://www.instagram.com/bitex_pro/" target="_blank"><img src="../../assets/images/footer/instagram.svg"></a>
+        </div>
+        <div class="flex-row-item footer_redes_item">
+          <a href="https://web.facebook.com/BITEX-PRO-105296117642973/" target="_blank">
+            <img src="../../assets/images/footer/facebook.svg">
+          </a>
+        </div>
+        <div class="flex-row-item footer_redes_item">
+          <a href="https://twitter.com/bitex_pro" target="_blank">
+            <img src="../../assets/images/footer/twitter.svg">
+          </a>
+        </div>
+        <div class="flex-row-item footer_redes_item" >
+          <a href="https://www.youtube.com/channel/UC-VYmjdewSNPyfd7AEvxrTA/videos?view_as=subscriber" target="_blank">
+            <img src="../../assets/images/footer/youtube.svg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-row-item footer_right_container">
+      <div class="flex-row-item footer_link_item">
+        <nuxt-link to="about" class="footer_link_item">{{$t('footer.aboutus')}}</nuxt-link>
+      </div>
+      <div class="flex-row-item footer_link_item">
+        <nuxt-link to="fees" class="footer_link_item">{{$t('footer.fees')}}</nuxt-link>
+      </div>
+      <div class="flex-row-item footer_link_item">
+        <nuxt-link to="terms" class="footer_link_item">{{$t('footer.terms')}}</nuxt-link>
+      </div>
+      <div class="flex-row-item footer_link_item">
+        <nuxt-link to="contacts" class="footer_link_item">{{$t('footer.contacts')}}</nuxt-link>
+      </div>
+    </div>
+  </div>
 </div>

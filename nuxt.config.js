@@ -13,9 +13,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {rel: 'stylesheet', type: 'font', href: 'https://fonts.googleapis.com/css?family=Roboto&display=swap'},
-      {rel: 'stylesheet', type: 'font', href: 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap'},
-      {rel: 'stylesheet', type: 'font', href: 'https://fonts.googleapis.com/css?family=Nunito&display=swap'}
+      { rel: 'stylesheet', type: 'font', href: 'https://fonts.googleapis.com/css?family=Roboto&display=swap' },
+      { rel: 'stylesheet', type: 'font', href: 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap' },
+      { rel: 'stylesheet', type: 'font', href: 'https://fonts.googleapis.com/css?family=Nunito&display=swap' }
     ]
   },
   /*

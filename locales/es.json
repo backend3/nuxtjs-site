@@ -6,7 +6,10 @@
     "title": "Inicio"
   },
   "footer": {
-    "title": "Pie de página"
+    "aboutus": "Sobre Nosotros",
+    "fees": "Tarífas",
+    "terms": "Términos y Condiciones",
+    "contacts": "Contáctenos"
   },
   "theme": {
     "button": "Cambiar tema"

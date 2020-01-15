@@ -6,7 +6,10 @@
     "title": "Home"
   },
   "footer": {
-    "title": "Footer"
+    "aboutus": "About Us",
+    "fees": "Fees",
+    "terms": "Terms & Conditions",
+    "contacts": "Contact Us"
   },
   "theme": {
     "button": "Cange theme"

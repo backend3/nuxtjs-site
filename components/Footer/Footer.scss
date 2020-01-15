@@ -1,8 +1,119 @@
 @import '../../layouts/default.scss';
 
 .Footer {
-  // @include themify($themes) {
-  //   background: themed('secondaryColor');
-  //   color: themed('primaryColor');
-  // }
+  @include themify($themes) {
+    color: themed('secondaryColor');
+  }
+  background-image: url(../../assets/images/footer/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 14vw;
+  position: fixed;
+  bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.footer_logo {
+  width: 20vw;
+}
+
+.footer_redes_item {
+  width: 1.8vw;
+  padding-right: 2vw;
+}
+
+.foot_container {
+  display: flex;
+}
+
+.footer_left_container {
+  width: 37vw;
+}
+
+.footer_right_container {
+  width: 63vw;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6vw;
+}
+
+.footer_logo_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+}
+
+.footer_container_redes {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_link_item {
+  margin-right: 2vw;
+  font-size: 1vw;
+  text-decoration: none;
+  @include themify($themes) {
+    color: themed('secondaryColor');
+  }
+}
+
+@media (max-width: 1024px) {
+  .Footer {
+    @include themify($themes) {
+      color: themed('secondaryColor');
+      background: themed('primaryColor');
+    }
+    height: auto;
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 5vw;
+  }
+  
+  .footer_logo {
+    width: 60vw;
+  }
+  
+  .footer_redes_item {
+    width: 8vw;
+    padding-right: 2vw;
+  }
+  
+  .foot_container {
+    display: block;
+  }
+  
+  .footer_left_container {
+    width: 100vw;
+  }
+  
+  .footer_right_container {
+    width: 100vw;
+    display: block;
+    text-align: center;
+    margin-top: 6vw;
+  }
+  
+  .footer_logo_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+  
+  .footer_container_redes {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer_link_item {
+    margin-right: 0vw;
+    font-size: 4vw;
+    text-decoration: none;
+    padding: 4vw;
+    @include themify($themes) {
+      color: themed('secondaryColor');
+    }
+  }
 }

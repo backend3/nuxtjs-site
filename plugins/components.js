@@ -5,6 +5,7 @@ import Footer from '../components/Footer/Footer.vue'
 import ManagerLanguage from '../components/ManagerLanguage/ManagerLanguage.vue'
 import ManagerTheme from '../components/ManagerTheme/ManagerTheme.vue'
 import Contact from '../components/Contact/index.vue'
+import About from '../components/About/index.vue'
 import HeaderSocial from '../components/HeaderSocial/HeaderSocial.vue'
 
 Vue.component('header-component', Header)
@@ -13,4 +14,5 @@ Vue.component('footer-component', Footer)
 Vue.component('manager-language', ManagerLanguage)
 Vue.component('manager-theme', ManagerTheme)
 Vue.component('contact-component', Contact)
+Vue.component('about-component', About)
 Vue.component('HeaderSocial', HeaderSocial)
